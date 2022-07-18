@@ -1,4 +1,4 @@
-# spike-app
+# LEGO Mindstorms Spike Hub and the App Tools
 
 A Python snippet utilizing the LEGO Spike app class to play sounds on the controlling device, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and a variety of commands: ```play_sound()```, ```start_sound()```, and ```stop_sound()```.
 
