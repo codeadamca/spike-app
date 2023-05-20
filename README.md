@@ -2,6 +2,29 @@
 
 A Python snippet utilizing the LEGO Spike app class to play sounds on the controlling device, [MicroPython](https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/), and a variety of commands: `play_sound()`, `start_sound()`, and `stop_sound()`.
 
+## Sample Code 
+
+```py
+from mindstorms import MSHub, App
+from mindstorms.control import wait_for_seconds
+
+hub = MSHub()
+
+app = App()
+
+app.play_sound('Robot 1')
+app.play_sound('Suction Cup')
+app.play_sound('Train On Tracks')
+
+app.start_sound('Service Announcement')
+
+wait_for_seconds(0.5)
+
+app.stop_sound()
+
+hub.speaker.beep()
+```
+
 ***
 
 ## Repo Resources
